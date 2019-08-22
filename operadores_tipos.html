@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Operadores de tipos en JavaScript</title>
+	</head>
+	<body>
+		<script>
+			var cadena = "abc", //DEVUELVE string
+				numero = 3.1416, //DEVUELVE number
+				bool = true, //DEVUELVE boolean
+				lista = [1, 2, 3], //DEVUELVE object
+				registro = {nombre: 'Emmanuel', apellido: 'Prin'}, //DEVUELVE object
+				fecha = new Date, //DEVUELVE object
+				miFuncion = function miFun () { alert('hola'); }, //DEVUELVE function
+				sinDefinir, //DEVUELVE undefined
+				vacia = null; //DEVUELVE object
+
+			//TYPEOF: NOS DEVUELVE EL TIPO DE DATO DE UNA VARIABLE.
+			//alert(typeof vacia);
+
+			//INSTANCEOF: DEVUELVE true SI UN OBJECTO ES INTANCIA DE OTRO ESPECIFICADO.
+			alert(lista instanceof Object); //DEVUELVE true
+			alert(lista instanceof Array); //DEVUELVE true
+			alert(lista instanceof Number); //DEVUELVE false
+		</script>
+	</body>
+</html>
