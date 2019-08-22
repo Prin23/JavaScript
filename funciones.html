@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Funciones en JavaScript</title>
+	</head>
+	<body>
+		<script>
+			/**
+			* Una funcion deberia realizar una unica tarea
+			**/
+
+			/**
+			* SINTAXIS DE UNA FUNCION
+			* 
+			* function nombre_funcion (<parametros_separados_por_coma>) { ... }
+			**/
+			//FUNCIÓN SIN PARAMETROS
+			function saludo() {
+				alert('hola');
+			}
+
+			//LOS PARÉNTESIS INVOCAN LA FUNCION
+			//saludo();
+
+			//SIN PARÉNTESIS SE PUEDE GUARDAR LA FUNCIÓN EN UNA VARIABLE
+			//var resultado_saludo = saludo;
+			//alert(resultado_saludo);
+
+			//FUNCIÓN CON PARAMETROS
+			function producto(a, b) {
+				return a * b;
+			}
+
+			var resultado_producto = producto(2, 4);
+			alert(resultado_producto);
+		</script>
+	</body>
+</html>
