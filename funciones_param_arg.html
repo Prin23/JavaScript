@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Parametros y argumentos en Javascript</title>
+	</head>
+	<body>
+		<script>
+			/**
+			* PARÁMETROS Y ARGUMENTOS:
+			* - Función puede tener cero o más parametros.
+			* - Parámetros son los nombres que aparecen en la definición de una función.
+			* - Argumentos son los valores que pasamos a (y que recibe) una función.
+			*
+			* REGLAS DE LOS PARAEMTROS:
+			* - No se especifica el tipo de los parámetros.
+			* - no se verifican los tipos de argumentos.
+			* - No se comprueba el número de los argumentos recibidos.
+			**/
+
+			// PARÁMETROS POR DEFECTO
+			// Cuando llamamos a una función con menos argumentos que los declarados. 
+			// Los valores que faltan no estan definidos.
+			function suma(a, b) {
+				if (b === undefined)
+					b = 0;
+
+				return a + b;
+			}
+
+			var resultado = suma(6);
+			//alert(resultado);
+
+			//PARÁMETROS POR EXCESO
+			// Cuando llamamos a un función con más argumentos de los que han sido declarados.
+			// Los valores que nos llegan pueden capturarse a través de un objeto (incluido en la función)
+			// llamado arguments.
+			function valores() {
+				alert("El número de argumentos es: "+arguments.length);
+
+				for (var i = 0; i < arguments.length; i++) {
+					alert("Argumento "+i+" = "+arguments[i]);
+				}
+			}
+
+			valores("a", 3, true, "hola");
+		</script>
+	</body>
+</html>
