@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sentencias, break y continue en JavaScript</title>
+	</head>
+	<body>
+		<script>
+			/**
+			* BREAK: se utiliza dentro de bucles para romper la ejecucion de los mismos. Incluso antes de que su condicion cambie.
+			* CONTINUE: se utiliza para pasar a la siguiente ejecucion del bucle.
+			**/
+			for (var i = 0; i < 20; i++) {
+				if (i == 15) {
+					break;
+				} else if (i % 2 == 0) {
+					continue;
+				}
+
+				alert("i = "+i);
+			}
+		</script>
+	</body>
+</html>
