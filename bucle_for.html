@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bucle for en JavaScript</title>
+	</head>
+	<body>
+		<script>
+			/**
+			* SINTAXIS
+			* for (<sentencia_1>; <sentencia_2>; <sentencia_3>) {
+			*  //Código que se repite
+			* }
+			* - <sentencia_1>: se ejecuta antes de que empiece el bloque de codigo a repetir.
+			* - <sentencia_2>: define la condicion por la que el bloque de código se va aejecutar.
+			* - <sentencia_3>: se ejecuta despues de que acabe la ejecucion del bloque de código.
+			**/
+			var i;
+
+			for (i = 2; i <= 5; i++) {
+				//alert("i = "+i);
+			}
+
+			/**
+			* VARIACIONES
+			* 1. Si omitimos la primera sentencia debemos haber inicializado la variable con anterioridad.
+			**/
+			var j = 0;
+
+			for (; j < 10; j++) {
+				//alert("j = "+j);	
+			}
+
+			//2. Si omitimos la segunda sentencia, dentro del código a reptir debemos incluir una instruccion break.
+			var k;
+
+			for (k = 0; ; k++) {
+				//alert("k = "+k);
+
+				if (k == 5) {
+					break;
+				}	
+			}
+
+			//3. Si omitimos la tercera sentencia, debemos incrementar o decrementar el valor de la variable dentro del bucle.
+			var l;
+
+			for (l = 0; l <= 5; ) {
+				//alert("l = "+l);
+
+				l ++;
+			}
+
+			//4. Podemos trabajar con uno o mas valores dentro del bucle for
+			var m, n;
+
+			for (m = 1, n = 10; m <= 10, n >= 1; m++, n--) {
+				alert("m = "+m+" n = "+n);
+			}
+		</script>
+	</body>
+</html>
