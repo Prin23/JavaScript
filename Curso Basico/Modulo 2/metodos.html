@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Metodos de objetos en JavaScript</title>
+	</head>
+	<body>
+		<script>
+			var persona = {
+				nombre: "Emmanuel",
+				apellido: "Prin",
+				//Creacion de metodo
+				fullname: function () {
+					return this.nombre+" "+this.apellido;
+				}
+			};
+
+			//Acceso al metodo
+			alert(persona.fullname());
+		</script>
+	</body>
+</html>
