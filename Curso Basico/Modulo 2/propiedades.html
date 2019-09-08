@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			/**
+			* Sintaxis de acceso a las propiedades de un objeto
+			* - objeto.propiedad
+			* - objeto["propiedad"]
+			* - objeto[expresion]
+			**/
+			var persona1 = {
+				nombre: "Emmanuel",
+				apellido: "Prin",
+				anio: 1994
+			}
+
+			/*alert(persona1.nombre);
+			alert(persona1["apellido"]);
+
+			var expresion = "anio";
+
+			alert(persona1[expresion]);*/
+
+			//Recorrer las propiedades
+			/*for (x in persona1) {
+				alert(persona1[x])
+			}*/
+
+			//Añadir propiedad
+			persona1.nacionalidad = "Venezolana";
+
+			//Borrar propiedad
+			delete persona1.anio;
+
+			for (x in persona1) {
+				alert(persona1[x])
+			}
+		</script>
+	</body>
+</html>
