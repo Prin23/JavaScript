@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Objeto Prototipo en JavaScript</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/**
+			* Es un objeto, que contiene una serie de atributos y metodos, 
+			* apartir del cual se pueden definir otros; los objetos predefinidos por javascript
+			* (String, Array, Object... etc) ya traen un objeto prototipo definido.
+			**/
+
+			//EJEMPLO:
+			function Persona (nom, ape, an) {
+				//Estos atributos estaran disponibles para todos los objetos de tipo "Persona"
+				this.nombre = nom;
+				this.apellido = ape;
+				this.anio = an;
+
+				//Este metodo estara disponible para todo los objetos de tipo "Persona"
+				this.fullname = function () {
+					return this.nombre+" "+this.apellido;
+				}
+			}
+
+			//Definimos objetos de tipo "Persona"
+			var emmanuel = new Persona("Emmanuel", "Prin", 1994);
+			var clari = new Persona("Claritza", "Prin", 1967);
+
+			//estos atributos/metodos solo estaran disponibles para los objetos a los que se les definio
+			emmanuel.edad = 25;
+			clari.trabajo = "Auditora";
+
+			alert(emmanuel.fullname());//esto es correcto
+			alert(emmanuel.edad);//esto es correcto
+			alert(emmanuel.trabajo);//Esto devuelve undefined, porque "trabajo" solo esta definida para el objeto "clari"
+			alert(clari.fullname());//esto es correcto
+			alert(clari.trabajo);//esto es correcto
+			alert(clari.edad); //Esto devuelve undefined, porque "edad" solo esta definida para el objeto "emmanuel"
+		</script>
+	</body>
+</html>
