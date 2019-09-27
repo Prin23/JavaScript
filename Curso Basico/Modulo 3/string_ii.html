@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Practica de Objeto String II</title>
+	</head>
+	<body>
+		<script>
+			var cadena = "esta es una cadena";
+
+			//MÉTODOS DE BUSQUEDA:
+			//chartAt(<num>): Devueve el caracter de una posicion
+			alert(cadena.charAt(3)); //Devuelve 'a'
+
+			//indexOf: nos devuelve la primera posicion de un caracter.
+			alert(cadena.indexOf('a'));
+
+			//lastIndexOf: nos devuelve la ultima posicion de un caracter.
+			alert(cadena.lastIndexOf('a'));
+
+			//search(<cadena|exp>): busca una cadena dentro de otra.
+			alert(cadena.search('una'));
+
+			//match(<exp>): busca coincidencias con una expresion regular.
+
+			//MÉTODOS DE COMPARACIÓN:
+			//localCompare(<cadena>): devuelve -1 (antes), 0 (son iguales), 1 (después).
+			alert(cadena.localeCompare("este es un"));
+
+			//INCLUYE, EMPIEZA O TERMINA
+			//includes(<cadena>): devuelve true si la cadena incluye el parámetro.
+			alert(cadena.includes('esta'));
+
+			//startsWith(<cadena>): devuelve true si la cadena empieza con el parámetro.
+			alert(cadena.startsWith('hola'));
+
+			//endsWith(<cadena>): devuevel true si la cadena acaba con el parámetro.
+			alert(cadena.endsWith('Chao'));
+
+			//CONCATENACIÓN Y REPETICIÓN
+			//concat(<cadena>): cacatena la cadena con el parámetro.
+			alert(cadena.concat(', esto se lo concatenamos'));
+
+			//repeat(<num>): repite la cadena un determinado numero de veces.
+			alert(cadena.repeat(3));
+
+			//EXTRACCIÓN:
+			//slice(<pos_ini>, <pos_fin>): devuelve la cadena comprendida entre ambas posiciones
+			alert(cadena.slice(2, 5));
+
+			//substring(<pos_ini>, <pos_fin>): devuelve la cadena comprendida entre ambas posiciones
+			alert(cadena.substring(2, 5));
+
+			//substr(<pos_ini>, <num_carac>): devuelve la cadena comprendida entr la posicion inical y el cantidada de caracteres
+			alert(cadena.substring(2, 5));
+
+			//split(<caracter>, [<num_veces>]): divide la cadena en un array de subcandenas separadas por el caracter del primer parámetro
+			alert(cadena.split(" "));
+
+			//trim(): extrae los caracteres de una cadena quitando los espacions
+			alert('   Esta cadena tiene espacios   '.trim());
+
+			//MAYÚSCULAS Y MINÚSCULAS:
+			//toLowerCase(): devuelve la cadena en minúsculas.
+			alert(cadena.toLowerCase());
+
+			//toUpperCase(): devuelve la cadena en mayúsculas.
+			alert(cadena.toUpperCase());
+
+			//MÉTODOS ESPECIALES:
+			//toString(): devuelve el valor del objeto String.
+			//valueOf(): devuelve el valor primitivo del objeto.
+		</script>
+	</body>
+</html>
