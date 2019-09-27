@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Practica de Objeto String I</title>
+	</head>
+	<body>
+		<script>
+			//INSTANCIACION
+			var daw = "Este es un texto para instanciar";
+			var dam = 'Este es otro texto de instanciación';
+			var asir = "Comillas dobles pueden contener 'simples' y viceversa";
+			var smr = "Para esta usamos el caracter de \"escape (\\) \"";
+			var ciclos = new String();
+
+			//CONCATENACION DE CADENAS
+			ciclos += "Vamos a concatenar las cadenas anteriores: \n";
+			ciclos += daw+"\n";
+			ciclos += dam+"\n";
+			ciclos += asir+"\n";
+			ciclos += smr;
+
+			alert(ciclos);
+			//PROPIEDADES
+			//length: devuelve la longitud de la cadena
+			alert("la longitud de la cadena 'ciclos' es: "+ciclos.length);
+		</script>
+	</body>
+</html>
